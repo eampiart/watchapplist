@@ -1,3 +1,8 @@
 body {
     font-family: Avenir, Helvetica;
 }
+
+.artwork {
+    width: 72px;
+    border-radius: 12.632px;
+}

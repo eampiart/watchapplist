@@ -1,23 +1,54 @@
-var apps = [];
-var JSONobject;
+var cachedJSON; //cached version of all the details of the apps
+var descriptions;
 
 $(document).ready(function () {
-    getAppList();
+    loadDescriptions();
 });
 
-/* ------------ Get JSON app list */
+/* ---------- Get descriptions list */
 
-function getAppList () {
-    $.getJSON('apps.json', function (response) {
-        handleAppList(response);
+function loadDescriptions () {
+    $.getJSON('descriptions.json', function (response) {
+        descriptions = response;
+        getCachedList();
     });
 }
 
-function handleAppList (appList) {
-    JSONobject = appList;
-    $.each(appList, function () {
-        apps.push(this);
-        console.log(this.trackName);
+/* ---------- Get cached JSON app list */
+
+function getCachedList () {
+    $.getJSON('cached.json', function (response) {
+        cachedJSON = response;
+        showJSON(cachedJSON);
     });
-    console.log(apps);
+}
+
+function showJSON (json) {
+    if ($('#apps').length == 0) {
+        var ul = $('<ul id="apps"></ul>');
+    } else {
+        var ul = $('#apps');
+    }
+
+    $.each(json, function (a) {
+        var app = json[a]
+        ul.append(createAppHtmlNode(app));
+    });
+
+    $('.container-fluid').append(ul);
+}
+
+function createAppHtmlNode(app) {
+    if ($('#' + app.trackId).length == 0) {
+        var li = $('<li id="' + app.trackId + '"></li>');
+    } else {
+        var li = $('#' + app.trackId);
+    }
+
+    var icon = $('<img class="artwork" src="' + app.artworkUrl512 + '">');
+    var name = $('<span class="trackName">' + app.trackName + '</span>');
+    var ownDescr = $('<p class="ownDescription">' + descriptions[app.trackId].ownDescription + '</p>');
+
+    li.append(icon).append(name).append(ownDescr);
+    return li;
 }
