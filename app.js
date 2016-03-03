@@ -23,6 +23,8 @@ function getCachedList () {
     });
 }
 
+/* ---------- Render HTML from JSON */
+
 function showJSON (json) {
     if ($('#apps').length == 0) {
         var ul = $('<ul id="apps"></ul>');
@@ -38,9 +40,10 @@ function showJSON (json) {
     $('.container-fluid').append(ul);
 }
 
+/* Create the node of one app */
 function createAppHtmlNode(app) {
     if ($('#' + app.trackId).length == 0) {
-        var li = $('<li id="' + app.trackId + '"></li>');
+        var li = $('<li class="clearfix" id="' + app.trackId + '"></li>');
     } else {
         var li = $('#' + app.trackId);
     }
@@ -49,6 +52,13 @@ function createAppHtmlNode(app) {
     var name = $('<span class="trackName">' + app.trackName + '</span>');
     var ownDescr = $('<p class="ownDescription">' + descriptions[app.trackId].ownDescription + '</p>');
 
-    li.append(icon).append(name).append(ownDescr);
+    var screenshots = $('<div class="screenshots"></div>');
+    $.each(descriptions[app.trackId].screenshots, function (i, url) {
+        var img = $('<img class="screenshot" src="img/' + url + '">');
+        screenshots.append(img);
+        console.log("url" + url);
+    });
+
+    li.append(icon).append(name).append(ownDescr).append(screenshots);
     return li;
 }

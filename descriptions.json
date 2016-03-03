@@ -1,78 +1,82 @@
 {
     "568903335" : {
         "name":"1password",
-        "ownDescription" : ""
-    },
-    "580669177" : {
-        "name":"bring",
-        "ownDescription" : ""
+        "screenshots" : ["1password.jpg"],
+        "ownDescription" : "You can quickly access the things you choose to have on your Watch. (You need to choose them on the iPhone)"
     },
     "657189652" : {
         "name":"clue",
-        "ownDescription" : ""
+        "screenshots" : ["clue.jpg"],
+        "ownDescription" : "A quick glance at how much time we have left to not care about anything 😉    Sadly, I haven't found a way to set anything for the given day, i.e. no tracking..."
     },
     "290986013" : {
         "name":"deliveries",
-        "ownDescription" : ""
+        "screenshots" : ["deliveries1.jpg","deliveries2.jpg","deliveries3.jpg"],
+        "ownDescription" : "Quickly check all the Apple Watch and Champagne glass Päcklis 😁"
     },
     "964280814" : {
         "name":"eggtimer",
-        "ownDescription" : ""
+        "screenshots" : ["eggtimer.jpg"],
+        "ownDescription" : "You already know this one more than I do... So I guess you don't need an introduction 😃"
     },
     "1043379075" : {
         "name":"eventcountdown",
-        "ownDescription" : ""
+        "screenshots" : ["eventcountdown1.jpg","eventcountdown2.jpg"],
+        "ownDescription" : "When can I kiss you again? 😘 THE quickest way to check 😃 Although the app doesn't look great... but it does what it has to do and anyway I last time I checked, there was basically no alternative 😉"
     },
     "1018992642" : {
         "name":"glancify",
-        "ownDescription" : ""
-    },
-    "767998024" : {
-        "name":"goodtask",
-        "ownDescription" : ""
+        "screenshots" : ["glancify.jpg"],
+        "ownDescription" : "It's... An app with which you can quickly check on any publicly available info on the internet... You set it up on the iPhone: choose a website and then select the info that you want to keep an eye on."
     },
     "389801252" : {
         "name":"instagram",
-        "ownDescription" : ""
+        "screenshots" : ["instagram.jpg"],
+        "ownDescription" : "Pictures, photos, dogs, food, quotes, really important stuff.... actually it's for when you're pooping and you're bored 😃"
     },
     "454638411" : {
         "name" : "messenger",
-        "ownDescription" : ""
+        "screenshots" : ["messenger.jpg"],
+        "ownDescription" : "Well... We don't use this anymore 😃 But you can check it out, WhatsApp should also do sg like this in the future... Hopefully! 😃"
     },
     "412845300" : {
         "name":"migros",
-        "ownDescription" : ""
+        "screenshots" : ["migros.jpg"],
+        "ownDescription" : "You've seen this, basically you can just access your shopping list 😃"
     },
     "955289458" : {
         "name":"ontime",
-        "ownDescription" : ""
+        "screenshots" : ["ontime.jpg"],
+        "ownDescription" : "This one send notifications when you have to change, sadly it doesn't write this info on the WatchFace... That'd be more useful! 😃 (You can push a route from your iPhone)"
     },
     "284666222" : {
         "name":"pcalc",
-        "ownDescription" : ""
+        "screenshots" : ["pcalc.jpg"],
+        "ownDescription" : "Calculator... Should I say more? 😃 +-*/"
     },
     "294855237" : {
         "name":"sbb",
-        "ownDescription" : "You obviously know this app. On the Watch, it can show you your Favorites, or show the next connection to \"Home\", or show departures from your location (i.e. the closest chosen Bahnhof). Your Favorites are where you can actually really \"search\" for connections, but you have to add the route to your Favorites on the iPhone. You can than choose from the next 4 connections and look at their details, swiping between the different parts of your route between changes."
+        "screenshots" : ["sbb1.jpg", "sbb2.jpg"],
+        "ownDescription" : "It can show you your Favorites, or show the next connection to \"Home\", or show departures from your location (i.e. the closest chosen Bahnhof). Your Favorites are where you can actually really \"search\" for connections, but you have to add the route to your Favorites on the iPhone. You can than choose from the next 4 connections and look at their details, swiping between the different parts of your route between changes."
     },
     "444578884" : {
         "name":"stocard",
-        "ownDescription" : ""
+        "screenshots" : ["stocard1.jpg", "stocard2.jpg"],
+        "ownDescription" : "Loyalty cards, on the watch"
     },
     "957912407" : {
         "name":"tally",
-        "ownDescription" : ""
-    },
-    "913277014" : {
-        "name":"trails",
-        "ownDescription" : ""
+        "screenshots" : ["tally.jpg"],
+        "ownDescription" : "This one is pretty simple... 😃 it just counts... Keeping scores, counting how many times Mali went in and out, how many glasses of water you had... Stuff like that 😃"
     },
     "1067458275" : {
         "name":"watchnotes",
-        "ownDescription" : ""
+        "screenshots" : ["watchnotes.jpg"],
+        "ownDescription" : "This one is my favourite. 😁 You can basically just write anything on your watch face. You can also schedule it, even daily or weekly. Platform info while on the train, or sg you definitely have to buy and shouldn't forget, things like that... Basically you can put ANY info on it... So be creative! 😃"
     },
     "486154808" : {
         "name":"wunderground",
-        "ownDescription" : ""
+        "screenshots" : ["wunderground.jpg"],
+        "ownDescription" : "Weather app, the one I mostly use. Forecast for today or next 10 days, rain, stuff like that 😊 Mainly I actually just glance at the complication on the watch face.. Usually it has a little cloud icon and some really close to zero number... Maybe it's a bug?! 😂"
     }
 }

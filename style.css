@@ -1,8 +1,76 @@
+@font-face {
+    font-family: SFTextRegular;
+    src: url(sftextregular.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Avenir, Helvetica;
+    font-family: SFTextRegular, Avenir, Helvetica;
+    margin-top: 20px;
+    background-color: #000;
+    color: #d9c599;
+    /*letter-spacing: 0.85px;*/
+}
+
+.container-fluid {
+    width: 90%;
+    max-width: 1000px;
+}
+
+#tip {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.95em;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    margin: 20px auto;
+    /*height: 100vh;*/
+}
+
+.trackName {
+    /*margin-left: 20px;
+    vertical-align: 80%;*/
 }
 
 .artwork {
-    width: 72px;
-    border-radius: 12.632px;
+    max-width: 72px;
+    width: 18%;
+    border-radius: 17.86%;
+    float: left;
+    margin-right: 20px;
+}
+
+.ownDescription {
+    clear: both;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.screenshots {
+    text-align: center;
+}
+
+.screenshot {
+    width: 120px;
+    margin: 20px;
+}
+
+/* CLEARFIX */
+.clearfix:after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
 }
