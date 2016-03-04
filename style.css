@@ -60,26 +60,16 @@ li {
     margin: 0;
 }
 
-.screenshots {
-    text-align: center;
-    /*height: 150px;*/
-}
-
-.screenshot {
-    width: 120px;
-    height: 150px;
-    margin: 20px;
-}
-
 /* ---------- SLICK STYLING */
 
 .slick-slider {
     margin: 40px 0 65px 0;
 }
 
-.slick-slide, .slick-current, .slick-active {
-    width: 120px;
-    height: 150px;
+.screenshot, .slick-slide, .slick-current, .slick-active {
+    /* 272x340 / 2 => 136x170*/
+    width: 136px;
+    height: 170px;
     margin: 0px 20px;
 }
 
