@@ -78,7 +78,7 @@ function initSlick () {
         initialSlide: 0,
         variableWidth: true,
         adaptiveHeight: false,
-        autoplay: true,
+        autoplay: false,
         edgeFriction: 0.15,
         speed: 200,
         responsive: [
