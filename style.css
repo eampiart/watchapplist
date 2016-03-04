@@ -12,12 +12,11 @@ body {
     margin: 20px 0px;
     background-color: #000;
     color: #d9c599;
-    /*letter-spacing: 0.85px;*/
 }
 
 .container-fluid {
     width: 90%;
-    max-width: 1000px;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -29,20 +28,18 @@ body {
     text-align: center;
 }
 
-ul {
+#apps {
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 
-li {
+.app {
     margin: 20px auto;
     /*height: 100vh;*/
 }
 
 .trackName {
-    /*margin-left: 20px;
-    vertical-align: 80%;*/
 }
 
 .artwork {
@@ -55,9 +52,11 @@ li {
 
 .ownDescription {
     clear: both;
+    padding-top: 15px;
+    margin: 0 10px;
     text-align: justify;
-    padding-top: 10px;
-    margin: 0;
+    line-height: 1.2;
+    letter-spacing: 0.95;
 }
 
 /* ---------- SLICK STYLING */
@@ -67,16 +66,11 @@ li {
 }
 
 .screenshot, .slick-slide, .slick-current, .slick-active {
-    /* 272x340 / 2 => 136x170*/
+    /* 272x340 / 2 => 136x170 (38mm Apple Watch)*/
     width: 136px;
     height: 170px;
     margin: 0px 20px;
 }
-
-/*.slick-slide img {
-    width: 120px;
-    height: 150px;
-}*/
 
 .slick-dots {
     bottom: -25px;

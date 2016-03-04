@@ -44,7 +44,7 @@ function showJSON (json) {
 /* Create the node of one app */
 function createAppHtmlNode(app) {
     if ($('#' + app.trackId).length == 0) {
-        var li = $('<li class="clearfix" id="' + app.trackId + '"></li>');
+        var li = $('<li class="app clearfix" id="' + app.trackId + '"></li>');
     } else {
         var li = $('#' + app.trackId);
     }
@@ -70,7 +70,7 @@ function initSlick () {
     $('.screenshots').slick({
         centerMode: true,
         slide: '.screenshot',
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: false,
         dots: true,
