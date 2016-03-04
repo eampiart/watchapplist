@@ -38,6 +38,7 @@ function showJSON (json) {
     });
 
     $('.container-fluid').append(ul);
+    initSlick();
 }
 
 /* Create the node of one app */
@@ -56,9 +57,43 @@ function createAppHtmlNode(app) {
     $.each(descriptions[app.trackId].screenshots, function (i, url) {
         var img = $('<img class="screenshot" src="img/' + url + '">');
         screenshots.append(img);
-        console.log("url" + url);
+        // console.log("url" + url);
     });
 
     li.append(icon).append(name).append(ownDescr).append(screenshots);
     return li;
+}
+
+/* ---------- Slick carousel in "Center Mode" */
+
+function initSlick () {
+    $('.screenshots').slick({
+        centerMode: true,
+        slide: '.screenshot',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        arrows: false,
+        initialSlide: 0,
+        variableWidth: true,
+        adaptiveHeight: false,
+        autoplay: true,
+        edgeFriction: 0.15,
+        speed: 200,
+        responsive: [
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+        ]
+    });
+
+    $('.screenshots').on('init', function () {
+        console.log("Slick initialized");
+    }).on('reInit', function () {
+        console.log("Slick reinitialized");
+    });
 }

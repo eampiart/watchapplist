@@ -9,7 +9,7 @@
 
 body {
     font-family: SFTextRegular, Avenir, Helvetica;
-    margin-top: 20px;
+    margin: 20px 0px;
     background-color: #000;
     color: #d9c599;
     /*letter-spacing: 0.85px;*/
@@ -18,6 +18,7 @@ body {
 .container-fluid {
     width: 90%;
     max-width: 1000px;
+    margin: auto;
 }
 
 #tip {
@@ -56,18 +57,50 @@ li {
     clear: both;
     text-align: justify;
     padding-top: 10px;
+    margin: 0;
 }
 
 .screenshots {
     text-align: center;
+    /*height: 150px;*/
 }
 
 .screenshot {
     width: 120px;
+    height: 150px;
     margin: 20px;
 }
 
-/* CLEARFIX */
+/* ---------- SLICK STYLING */
+
+.slick-slider {
+    margin: 40px 0 65px 0;
+}
+
+.slick-slide, .slick-current, .slick-active {
+    width: 120px;
+    height: 150px;
+    margin: 0px 20px;
+}
+
+/*.slick-slide img {
+    width: 120px;
+    height: 150px;
+}*/
+
+.slick-dots {
+    bottom: -25px;
+}
+
+.slick-dots li {
+    margin: 0px;
+}
+
+.slick-dots li button:before, .slick-dots li.slick-active button:before {
+    color: white;
+}
+
+/* ---------- CLEARFIX */
 .clearfix:after {
    content: " ";
    display: block;
