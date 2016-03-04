@@ -48,9 +48,12 @@ function createAppHtmlNode(app) {
     } else {
         var li = $('#' + app.trackId);
     }
+    var appURL = app.trackViewUrl;
+    console.log(appURL);
 
-    var icon = $('<img class="artwork" src="' + app.artworkUrl512 + '">');
+    var icon = $('<img class="icon" src="' + app.artworkUrl512 + '">');
     var name = $('<span class="trackName">' + app.trackName + '</span>');
+    var open = $('<a href="' + appURL + '" class="btn openButton" target="_blank">Open</a>');
     var ownDescr = $('<p class="ownDescription">' + descriptions[app.trackId].ownDescription + '</p>');
 
     var screenshots = $('<div class="screenshots"></div>');
@@ -60,7 +63,7 @@ function createAppHtmlNode(app) {
         // console.log("url" + url);
     });
 
-    li.append(icon).append(name).append(ownDescr).append(screenshots);
+    li.append(icon).append(name).append(open).append(ownDescr).append(screenshots);
     return li;
 }
 
